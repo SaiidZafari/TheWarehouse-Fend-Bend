@@ -1,0 +1,39 @@
+.products{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.prod{
+    width: 20vmax;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.id_amount_box{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.btn{
+    width: 83%;
+    padding: 1%;
+    background-color: darkred;
+    color: white;
+    border-radius: 5px;
+    margin: 2%;
+}
