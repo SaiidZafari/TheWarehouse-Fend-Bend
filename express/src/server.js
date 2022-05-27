@@ -10,11 +10,7 @@ const inventory = require("./Data/inventory.json");
 
 app.use(express.json());
 
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+app.use(cors({ origin: "*", }));
 
 app.get("/", (req, res) => {
   res.send("Express Server is running now!");

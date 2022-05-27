@@ -8,9 +8,11 @@ const Warehouse = ({ product }) => {
 
   const inventoryURL = "http://localhost:3001/api/inventory";
 
-  fetch(inventoryURL)
-    .then((res) => res.json())
-    .then((jsonData) => setDataIn(jsonData.inventory));
+ useEffect(() => {
+   fetch(inventoryURL)
+     .then((res) => res.json())
+     .then((jsonData) => setDataIn(jsonData.inventory));
+ }, [product]);
 
 
   const [leg, setLeg] = useState(0);
